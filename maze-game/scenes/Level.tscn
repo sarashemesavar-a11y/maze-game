@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://d1kr553bis2t"]
+
+[ext_resource type="Script" uid="uid://cqctpttnqkc3y" path="res://scripts/Level.gd" id="1_k5jlv"]
+[ext_resource type="PackedScene" uid="uid://c7s11eprfwcee" path="res://scenes/Player.tscn" id="1_uhqny"]
+
+[node name="Level" type="Node2D" unique_id=1007870017]
+script = ExtResource("1_k5jlv")
+
+[node name="Decorations" type="Node2D" parent="." unique_id=2093848196]
+
+[node name="Player" parent="." unique_id=2092199155 instance=ExtResource("1_uhqny")]
+position = Vector2(342, 414)
