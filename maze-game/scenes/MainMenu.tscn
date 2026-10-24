@@ -1,0 +1,41 @@
+[gd_scene format=3 uid="uid://csirfa5ua5vdi"]
+
+[ext_resource type="Script" uid="uid://br7xoo01x3a0i" path="res://scripts/MainMenu.gd" id="1_yqorp"]
+
+[node name="MainMenu" type="Control" unique_id=1970203396]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_yqorp")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1349444348]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="HighContrastCheck" type="CheckButton" parent="VBoxContainer" unique_id=293766924]
+layout_mode = 2
+text = "High Contrast Mode"
+
+[node name="DeclutterCheck" type="CheckButton" parent="VBoxContainer" unique_id=87656093]
+layout_mode = 2
+text = "Simplify Environment"
+
+[node name="OneButtonCheck" type="CheckButton" parent="VBoxContainer" unique_id=1340483179]
+layout_mode = 2
+text = "One-Button Controls Mode"
+
+[node name="SpeedSlider" type="HSlider" parent="VBoxContainer" unique_id=639089]
+layout_mode = 2
+min_value = 0.2
+max_value = 1.0
+step = 0.1
+value = 1.0
+
+[connection signal="toggled" from="VBoxContainer/HighContrastCheck" to="." method="_on_high_contrast_check_toggled"]
+[connection signal="toggled" from="VBoxContainer/DeclutterCheck" to="." method="_on_declutter_check_toggled"]
+[connection signal="toggled" from="VBoxContainer/OneButtonCheck" to="." method="_on_one_button_check_toggled"]
+[connection signal="value_changed" from="VBoxContainer/SpeedSlider" to="." method="_on_speed_slider_value_changed"]
