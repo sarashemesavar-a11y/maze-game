@@ -4,12 +4,17 @@
 [ext_resource type="Script" uid="uid://b6g4gcji7uc5t" path="res://scripts/Player.gd" id="1_v6fml"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_nsa1y"]
+custom_solver_bias = 0.046
+size = Vector2(334, 256)
 
 [node name="Player" type="CharacterBody2D" unique_id=2092199155]
 script = ExtResource("1_v6fml")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=249667916]
+position = Vector2(28.999996, -11)
+scale = Vector2(5.6015625, 2.875)
 texture = ExtResource("1_p0vlq")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=230061297]
 shape = SubResource("RectangleShape2D_nsa1y")
+debug_color = Color(0, 0.6, 0.69803923, 0.54901963)
