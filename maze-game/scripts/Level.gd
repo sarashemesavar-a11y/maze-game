@@ -1,6 +1,11 @@
 extends Node2D
 
 @onready var decorations_node: Node2D = $Decorations
+@onready var tileMapLayer = $TileMapLayer
+
+const ROWS = 25
+const COLS = 25
+
 
 
 func _ready() -> void:

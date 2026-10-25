@@ -35,7 +35,12 @@ max_value = 1.0
 step = 0.1
 value = 1.0
 
+[node name="StartButton" type="Button" parent="VBoxContainer" unique_id=840647303]
+layout_mode = 2
+text = "Start Game"
+
 [connection signal="toggled" from="VBoxContainer/HighContrastCheck" to="." method="_on_high_contrast_check_toggled"]
 [connection signal="toggled" from="VBoxContainer/DeclutterCheck" to="." method="_on_declutter_check_toggled"]
 [connection signal="toggled" from="VBoxContainer/OneButtonCheck" to="." method="_on_one_button_check_toggled"]
 [connection signal="value_changed" from="VBoxContainer/SpeedSlider" to="." method="_on_speed_slider_value_changed"]
+[connection signal="pressed" from="VBoxContainer/StartButton" to="." method="_on_start_button_pressed"]

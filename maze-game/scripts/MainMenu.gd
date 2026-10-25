@@ -24,3 +24,6 @@ func _on_speed_slider_value_changed(value: float) -> void:
 
 func _on_one_button_check_toggled(toggled_on: bool) -> void:
 	pass # Replace with function body.
+
+func _on_start_button_pressed() -> void: 
+	get_tree().change_scene_to_file("res://scenes/Level.tscn")

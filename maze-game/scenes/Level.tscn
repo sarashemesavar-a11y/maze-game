@@ -6,7 +6,17 @@
 [node name="Level" type="Node2D" unique_id=1007870017]
 script = ExtResource("1_k5jlv")
 
+[node name="Player" parent="." unique_id=2092199155 instance=ExtResource("1_uhqny")]
+position = Vector2(-364, -1889)
+up_direction = Vector2(0.9999875, -0.0049999375)
+
 [node name="Decorations" type="Node2D" parent="." unique_id=2093848196]
 
-[node name="Player" parent="." unique_id=2092199155 instance=ExtResource("1_uhqny")]
-position = Vector2(342, 414)
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=787095632]
+
+[node name="Randomize" type="Button" parent="." unique_id=47382158]
+offset_left = 123.0
+offset_top = -471.0
+offset_right = 600.0
+offset_bottom = -198.0
+text = "Generate Random Map"
